@@ -8,7 +8,7 @@ const errorHandler = (err, req, res, next) => {
 
     res.status(status);
 
-    res.join({ message: err.message });
+    res.json({ message: err.message });
 }
 
 module.exports = errorHandler;
